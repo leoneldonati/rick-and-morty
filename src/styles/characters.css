@@ -1,39 +1,80 @@
-
-
 .Character-h1 {
-    color: var(--color_principal);
-    font-family: var(--fuente_principal);
-    font-size: 4em;
+  color: var(--color_principal);
+  font-family: var(--fuente_principal);
+  font-size: 4em;
 
-    filter: brightness(1.9) contrast(2);
-    text-shadow: 0 0 .2em var(--color_principal);
+  filter: brightness(1.9) contrast(2);
+  text-shadow: 0 0 0.2em var(--color_principal);
 
+  margin-bottom: 0.4em;
 }
 
 .Character-container {
-    width: 100%;
-    max-width: 70%;
+  width: 80%;
 
-    box-shadow: .2em -.2em .6em var(--color_complementario);
-    border: 1px solid var(--color_secundario);
-    border-radius: .4em;
-    
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 1em;
+  
+  border: 1px solid var(--color_secundario);
+  border-radius: 0.9em;
 
-    padding: 2em;
-    margin-top: 2em;
 
-    background-color: lightblue;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1em;
 
-    
+  padding: 2em;
+  margin-top: 2em;
+
+  
 }
+
 
 .Character-h2 {
-    color: var(--color_complementario);
-    font-family: var(--fuente_secundaria);
-    font-size: 3em;
+  color: var(--color_complementario);
+  font-family: var(--fuente_secundaria);
+  font-size: 3em;
 }
+
+.Character-info {
+  color: var(--color_secundario);
+  font: 2em var(--fuente_secundaria);
+
+  padding: 1em;
+
+  display: flex;
+  flex-flow: column;
+  text-align: justify;
+  gap: 1em;
+}
+
+.Character-img {
+  display: block;
+  object-fit: cover;
+  border-radius: 1em;
+
+  transition: box-shadow 0.1s ease-in;
+}
+
+.Character-svg {
+  fill: var(--color_complementario);
+  width: 1em;
+  height: auto;
+
+  animation: effectText 1s 1s infinite alternate ease ;
+  
+}
+/* animación svg */
+@keyframes effectText {
+  0% {
+    filter: brightness(1.1);
+    filter: saturate(85%);
+    filter: invert(38%);
+  }
+  100% {
+    filter: brightness(2);
+    filter: saturate(60%);
+    filter: invert(73%);
+  }
+}
+

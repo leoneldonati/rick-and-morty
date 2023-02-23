@@ -6,6 +6,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className="Character-h1">Rick and Morty</h1>
       <Characters />
     </div>
   )

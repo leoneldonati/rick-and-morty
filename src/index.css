@@ -18,3 +18,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #101010;
+    opacity: 1;
+    background-image:  linear-gradient(30deg, #0d7c02 12%, transparent 12.5%, transparent 87%, #0d7c02 87.5%, #0d7c02), linear-gradient(150deg, #0d7c02 12%, transparent 12.5%, transparent 87%, #0d7c02 87.5%, #0d7c02), linear-gradient(30deg, #0d7c02 12%, transparent 12.5%, transparent 87%, #0d7c02 87.5%, #0d7c02), linear-gradient(150deg, #0d7c02 12%, transparent 12.5%, transparent 87%, #0d7c02 87.5%, #0d7c02), linear-gradient(60deg, #0d7c0277 25%, transparent 25.5%, transparent 75%, #0d7c0277 75%, #0d7c0277), linear-gradient(60deg, #0d7c0277 25%, transparent 25.5%, transparent 75%, #0d7c0277 75%, #0d7c0277);
+    background-size: 28px 49px;
+    background-position: 0 0, 0 0, 14px 25px, 14px 25px, 0 0, 14px 25px;
+}

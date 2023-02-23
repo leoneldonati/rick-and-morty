@@ -14,4 +14,7 @@
     display: grid;
     place-items: center;
     
+    box-shadow: inset 0 0 1em .3em var(--color_complementario);
+    border-radius: 2em;
+    
 }
