@@ -1,0 +1,20 @@
+/* variables */
+:root{
+    --fuente_principal: 'Audiowide', cursive;
+    --fuente_secundaria: 'Tilt Neon', cursive; 
+    
+    --color_principal: #0c4008;
+    --color_secundario: #135f0c;
+    --color_complementario: #197f10;
+    --color_fondo: #101010;
+    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+

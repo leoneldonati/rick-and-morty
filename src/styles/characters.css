@@ -1,0 +1,39 @@
+
+
+.Character-h1 {
+    color: var(--color_principal);
+    font-family: var(--fuente_principal);
+    font-size: 4em;
+
+    filter: brightness(1.9) contrast(2);
+    text-shadow: 0 0 .2em var(--color_principal);
+
+}
+
+.Character-container {
+    width: 100%;
+    max-width: 70%;
+
+    box-shadow: .2em -.2em .6em var(--color_complementario);
+    border: 1px solid var(--color_secundario);
+    border-radius: .4em;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+
+    padding: 2em;
+    margin-top: 2em;
+
+    background-color: lightblue;
+
+    
+}
+
+.Character-h2 {
+    color: var(--color_complementario);
+    font-family: var(--fuente_secundaria);
+    font-size: 3em;
+}

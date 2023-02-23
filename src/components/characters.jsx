@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import '../styles/characters.scss'
+import '../styles/characters.css'
 
 const Characters = () => {
   const URL = "https://rickandmortyapi.com/api/character";

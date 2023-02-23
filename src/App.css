@@ -1,0 +1,17 @@
+
+.App {
+    max-width: 90em;
+    width: 100%;
+    min-height: 100vh;
+
+    background: var(--color_fondo);
+
+    margin: 0 auto;
+    padding: 2em;
+
+    text-align: center;
+
+    display: grid;
+    place-items: center;
+    
+}

@@ -1,5 +1,5 @@
 import Characters from './components/characters.jsx'
-import './App.scss'
+import './App.css'
 
 function App() {
   
