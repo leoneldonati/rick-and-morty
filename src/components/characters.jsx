@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import '../styles/characters.scss'
 
 const Characters = () => {
   const URL = "https://rickandmortyapi.com/api/character";
@@ -18,25 +19,25 @@ const Characters = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Rick and Morty</h1>
+    <>
+      <h1 className="Character-h1">Rick and Morty</h1>
       {character.map((character) => {
         return (
-          <div key={character.id}>
-            <h2>{character.name}</h2>
-            <div>
-              <img src={character.image} alt={character.name} />
-              <p>
-                {character.gender == "unknown"
+          <div key={character.id} className="Character-container">
+            <h2 className="Character-h2">{character.name}</h2>
+            <div className="Character-info">
+              <img src={character.image} alt={character.name} className="Character-img" loading="lazy"/>
+              <p className="Character-p">
+                Gender: {character.gender == "unknown"
                   ? "Unidentified gender"
-                  : character.gender}{" "}
-                :{" "}{character.species}
+                  : character.gender}
               </p>
+              <p className="Character-p">Species: {character.species}</p>
             </div>
           </div>
         );
       })}
-    </div>
+    </>
   );
 };
 
